@@ -16,7 +16,7 @@
 			echo "Voce escolheu Sair";
 			break;
 		default:
-			// code...
+			echo "Digite um numero valido BURRO";
 			break;
 	}
 
