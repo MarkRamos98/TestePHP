@@ -8,6 +8,7 @@
 			echo $resp;
 
 	}
+	
 
 	//criando uma função
 	function somar ($num1,$num2){
@@ -17,13 +18,12 @@
 
 	}
 
-
 	// executando a função
 	soma();
 
 	echo "<br />";
 
-	// executando a função
+	// executando a função com parâmetros
 	somar(10,20);
 
  ?>
