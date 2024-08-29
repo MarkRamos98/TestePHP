@@ -1,11 +1,29 @@
 <?php 
-
-	function somar (){
+	//criando uma função
+	function soma (){
 			
-			echo "Somando...";
+			$num1 = 10;
+			$num2 = 20;
+			$resp = $num1 + $num2;
+			echo $resp;
 
 	}
 
-	somar();
+	//criando uma função
+	function somar ($num1,$num2){
+			
+			$resp = $num1 + $num2;
+			echo $resp;
+
+	}
+
+
+	// executando a função
+	soma();
+
+	echo "<br />";
+
+	// executando a função
+	somar(10,20);
 
  ?>
