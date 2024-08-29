@@ -26,4 +26,10 @@
 	// executando a função com parâmetros
 	somar(10,20);
 
+	//criando uma função
+	function somarValores ($num1,$num2){
+			
+			return ($num1 + $num2);
+				}
+	echo "<br /> Somando Valores:" . somarValores(50,60);			
  ?>
