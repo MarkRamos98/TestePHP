@@ -1,18 +1,18 @@
 <?php 
 
-	$num = 3;
+	$num = 4;
 
-	if ($num % 2 == 0){
+	if ($num % 10 == 0){
 
-		echo "Ele é divisível por 2";
+		echo "Ele é divisível por 10";
 	
 	}else if ($num % 5 == 0){
 
 		echo "Ele é divisível por 5";
 
-	}else if ($num % 10 == 0){
+	}else if ($num % 2 == 0){
 
-		echo "Ele é divisível por 10";
+		echo "Ele é divisível por 2";
 
 	}else{
 
