@@ -14,7 +14,7 @@
 
 	function Media($max,$min,$qua) {
 
-		return $R = ($max + $min) / $qua 
+		return $R = (($max + $min) / $qua);
 
 	}
 
@@ -26,45 +26,40 @@
 	$Midd;
 	$Female;
 	$Fidd;
+	$ContarIdd;
+	$ContarAlt;
 
 	$F = 0;
+
+	$ContarIdd = ContarIdd($F);
+	$ContarAlt = ContarAlt($F);
 
 	while ($F < $People) {
 		// code...
 
 		If (($F % 2) == 1){
 
-			if (ContarIdd() > $Midd){
+			if ($ContarIdd > $Midd){
 
-				$Midd = ContarIdd($F);
+				$Midd = $ContarIdd;
 
 			}
 		
 		} else {
 
-			if (ContarIdd() < $Fidd){
+			if ($ContarIdd < $Fidd){
 
-				$Fidd = ContarIdd($F);
-
-			}
-
-			if (ContarAlt() > $FMaxAlt){
-
-				$FMaxAlt = ContarAlt($F);
-
-			} if (ContarAlt() < $FMaxAlt){
-
-				$FMinAlt = ContarAlt($F);
+				$Fidd = $ContarIdd;
 
 			}
 
-			if (ContarAlt() > $MaxAlt){
+			if ($ContarAlt > $FMaxAlt){
 
-				$MaxAlt = ContarAlt($F);
+				$FMaxAlt = $ContarAlt;
 
-			} if (ContarAlt() < $MaxAlt){
+			} if ($ContarAlt < $FMaxAlt){
 
-				$MinAlt = ContarAlt($F);
+				$FMinAlt = $ContarAlt;
 
 			}
 
@@ -72,10 +67,22 @@
 
 		}
 
+		if ($ContarAlt > $MaxAlt){
+
+			$MaxAlt = $ContarAlt;
+
+		} if ($ContarAlt < $MaxAlt){
+
+			$MinAlt = $ContarAlt;
+
+		}
+
 		$F++;
 
 	}
 
-	Media($FMaxAlt,$FMinAlt,$People)
+	$Mid = Media($FMaxAlt,$FMinAlt,$Female);
+
+	echo "A maior altura é: $MaxAlt e a menor é: $MinAlt</br>A média de altura de mulheres é: $Mid</br>U homi mai veiu tem: $Midd i a muie mai nova é: $Fidd"
 
  ?>
