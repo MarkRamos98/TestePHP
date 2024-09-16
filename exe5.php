@@ -19,13 +19,13 @@
 	}
 
 	$People = 5;
-	$MaxAlt;
-	$MinAlt;
-	$FMaxAlt;
-	$FMinAlt;
-	$Midd;
-	$Female;
-	$Fidd;
+	$MaxAlt = 0;
+	$MinAlt = 0;
+	$FMaxAlt = 0;
+	$FMinAlt = 0;
+	$Midd = 0;
+	$Female = 0;
+	$Fidd = 0;
 	$ContarIdd;
 	$ContarAlt;
 
@@ -83,6 +83,6 @@
 
 	$Mid = Media($FMaxAlt,$FMinAlt,$Female);
 
-	echo "A maior altura é: $MaxAlt e a menor é: $MinAlt</br>A média de altura de mulheres é: $Mid</br>U homi mai veiu tem: $Midd i a muie mai nova é: $Fidd"
+	echo "A maior altura é: $MaxAlt e a menor é: $MinAlt</br>A média de altura de mulheres é: $Mid</br>U homi mai veiu tem: $Midd i a muie mai nova é: $Fidd";
 
  ?>
