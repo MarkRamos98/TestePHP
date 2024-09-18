@@ -1,4 +1,4 @@
-<?php 
+3<?php 
 
 	function ContarIdd($F){
 
