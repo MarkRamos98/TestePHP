@@ -14,4 +14,8 @@
 
 	echo "<br />".ucwords($texto);
 
+	echo "<br />".substr($texto, 13,3);
+
+	echo "<br />".str_replace("micro", "Nano", $texto);
+
  ?>
