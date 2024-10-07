@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Validar usuário</title>
+</head>
+<body>
+	<h1>Validar usuário</h1>
+	<form action="recebeusuario.php" method="post">
+		<label for="usuário">email</label>
+		<input type="email" name="email" id="email" required maxlength="100">
+		<br>
+		<label for="senha">senha</label>
+		<input type="password" name="senha" id="senha" required maxlength="10">
+		<br><br>
+		<input type="submit" name="enviar" value="enviar">
+		<input type="reset" name="limpar" value="limpar">
+
+	</form>
+
+</body>
+</html>
